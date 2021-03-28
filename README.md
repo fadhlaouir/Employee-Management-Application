@@ -3,7 +3,7 @@
 ![image](https://github.com/fadhlaouir/Employee-Management-Application/blob/master/AngularSpringBoot.png)
 
 ## FrontEnd Side tools and technologies used: 
-- Angular 10 
+- Angular 11 
 - TypeScript 
 - NodeJs && NPM 
 - VS Code IDE 
