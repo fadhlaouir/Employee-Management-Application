@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { EmployeeListComponent } from './components/employee-list/employee-list.component';
 import { EmployeeService } from './services/employee.service';
 import { CreateEmployeeComponent } from './components/create-employee/create-employee.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CreateEmployeeComponent } from './components/create-employee/create-emp
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     EmployeeService
