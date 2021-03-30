@@ -35,5 +35,12 @@ export class EmployeeListComponent implements OnInit {
   }
 
   // Delete Employee by id
-  deleteEmployee(id: number) { }
+  deleteEmployee(id: number) {
+    this.employeeService.deleteEmployee(id).subscribe(data => {
+      console.log(data)
+      this.getEmployees;
+      // to refresh the page
+      window.location.reload();
+    })
+  }
 }
