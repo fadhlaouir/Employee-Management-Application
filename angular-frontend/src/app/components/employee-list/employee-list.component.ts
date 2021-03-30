@@ -21,12 +21,19 @@ export class EmployeeListComponent implements OnInit {
   ngOnInit(): void {
     this.getEmployees();
   }
+
+  // Get All Employees
   private getEmployees() {
     this.employeeService.getEmployeesList().subscribe(data => {
       this.employees = data
     })
   }
+
+  // Send you to update-employee component with router
   updateEmployee(id: number) {
     this.router.navigate(['update-employee', id])
   }
+
+  // Delete Employee by id
+  deleteEmployee(id: number) { }
 }
