@@ -43,4 +43,9 @@ export class EmployeeListComponent implements OnInit {
       window.location.reload();
     })
   }
+
+  // Display Employee By ID
+  displayEmployee(id: number) {
+    this.router.navigate(['employee', id])
+  }
 }
